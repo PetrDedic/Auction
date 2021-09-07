@@ -1,0 +1,80 @@
+﻿<Page
+    x:Class="Aukce.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Aukce"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Background="{StaticResource CustomAcrylicDark}" Grid.Row="1" Grid.Column="0">
+            <StackPanel>
+                <TextBlock FontSize="24" Margin="16" Text="Auctions" VerticalAlignment="Center" FontWeight="Bold"/>
+                <ListView FontSize="16">
+                    <ListViewItem Padding="1">
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="AllAuctions" Click="AllAuctions_Click">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Button.Template>
+                                <TextBlock Padding="24,16,16,16" Text="All auctions" VerticalAlignment="Center" Width="300"/>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Padding="1">
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="MyAuctions" Click="MyAuctions_Click">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Button.Template>
+                                <TextBlock Padding="24,16,16,16" Text="My auctions" VerticalAlignment="Center" Width="300"/>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+                <TextBlock FontSize="24" Margin="16" Text="Account" VerticalAlignment="Center" FontWeight="Bold"/>
+                <ListView>
+                    <ListViewItem Padding="1">
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="Details" Click="Details_Click">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Button.Template>
+                                <TextBlock Padding="24,16,16,16" Text="Details" VerticalAlignment="Center" Width="300"/>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Padding="1">
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="Sign" Click="Sign_Click">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Button.Template>
+                                <TextBlock Padding="24,16,16,16" Text="Sign In | Sign Off" VerticalAlignment="Center" Width="300"/>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+        </Grid>
+        <Frame Grid.Column="2" x:Name="frame"></Frame>
+    </Grid>
+</Page>
