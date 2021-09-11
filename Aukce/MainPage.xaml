@@ -29,7 +29,10 @@
                                         <ContentPresenter />
                                     </ControlTemplate>
                                 </Button.Template>
-                                <TextBlock Padding="24,16,16,16" Text="All auctions" VerticalAlignment="Center" Width="300"/>
+                                <StackPanel Orientation="Horizontal"  Width="300">
+                                    <SymbolIcon Symbol="AllApps" Width="64"/>
+                                    <TextBlock Padding="16,16,16,16" Text="All auctions" VerticalAlignment="Center" Width="236"/>
+                                </StackPanel>
                             </Button>
                         </StackPanel>
                     </ListViewItem>
@@ -41,7 +44,10 @@
                                         <ContentPresenter />
                                     </ControlTemplate>
                                 </Button.Template>
-                                <TextBlock Padding="24,16,16,16" Text="My auctions" VerticalAlignment="Center" Width="300"/>
+                                <StackPanel Orientation="Horizontal"  Width="300">
+                                    <SymbolIcon Symbol="Admin" Width="64"/>
+                                    <TextBlock Padding="16,16,16,16" Text="My auctions" VerticalAlignment="Center" Width="236"/>
+                                </StackPanel>
                             </Button>
                         </StackPanel>
                     </ListViewItem>
@@ -56,7 +62,10 @@
                                         <ContentPresenter />
                                     </ControlTemplate>
                                 </Button.Template>
-                                <TextBlock Padding="24,16,16,16" Text="Details" VerticalAlignment="Center" Width="300"/>
+                                <StackPanel Orientation="Horizontal"  Width="300">
+                                    <SymbolIcon Symbol="Edit" Width="64"/>
+                                    <TextBlock Padding="16,16,16,16" Text="Details" VerticalAlignment="Center" Width="236"/>
+                                </StackPanel>
                             </Button>
                         </StackPanel>
                     </ListViewItem>
@@ -68,7 +77,10 @@
                                         <ContentPresenter />
                                     </ControlTemplate>
                                 </Button.Template>
-                                <TextBlock Padding="24,16,16,16" Text="Sign In | Sign Off" VerticalAlignment="Center" Width="300"/>
+                                <StackPanel Orientation="Horizontal"  Width="300">
+                                    <SymbolIcon Symbol="Contact" Width="64"/>
+                                    <TextBlock Padding="16,16,16,16" Text="Account" VerticalAlignment="Center" Width="236"/>
+                                </StackPanel>
                             </Button>
                         </StackPanel>
                     </ListViewItem>

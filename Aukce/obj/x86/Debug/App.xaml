@@ -7,12 +7,12 @@
     <Application.Resources>
         <AcrylicBrush x:Key="CustomAcrylicDark"
                       BackgroundSource="HostBackdrop"
-                      TintColor="Gray"
+                      TintColor="#FF0099"
                       TintOpacity="0.6"
                       FallbackColor="Black"/>
         <AcrylicBrush x:Key="CustomAcrylicLight"
                       BackgroundSource="HostBackdrop"
-                      TintColor="White"
+                      TintColor="#493240"
                       TintOpacity="0.6"
                       FallbackColor="White"/>
     </Application.Resources>
