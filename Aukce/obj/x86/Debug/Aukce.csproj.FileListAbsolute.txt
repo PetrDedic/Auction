@@ -112,3 +112,8 @@ C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\resources.en-us.resfiles
 C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\resources.en-us.resfiles.intermediate
 C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\Microsoft.EntityFrameworkCore.Design\en-US\Microsoft.EntityFrameworkCore.Properties.DesignStrings.resw
+C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Login.xbf
+C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\Login.g.i.cs
+C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\Login.g.cs
+C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\Login.xaml
+C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\Login.xbf

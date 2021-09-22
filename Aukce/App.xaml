@@ -14,7 +14,7 @@
                       BackgroundSource="HostBackdrop"
                       TintColor="#493240"
                       TintOpacity="0.6"
-                      FallbackColor="White"/>
+                      FallbackColor="Black"/>
     </Application.Resources>
 
 </Application>

@@ -166,6 +166,9 @@
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Details.xbf">
       <PackagePath>Details.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Login.xbf">
+      <PackagePath>Login.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
