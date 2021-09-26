@@ -2,13 +2,22 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Auctions" />
+    <RootPropertyPathName Name="Id" />
+    <RootPropertyPathName Name="Price" />
     <RootPropertyPathName Name="End" />
     <RootPropertyPathName Name="Creator" />
     <RootPropertyPathName Name="Name" />
-    <RootPropertyPathName Name="Price" />
     <RootPropertyPathName Name="Description" />
-    <RootPropertyPathName Name="SignInCommand" />
+    <RootPropertyPathName Name="CreateCommand" />
+    <RootPropertyPathName Name="Time" />
+    <RootPropertyPathName Name="Date" />
+    <RootPropertyPathName Name="Item" />
+    <RootPropertyPathName Name="InstaBuy" />
+    <RootPropertyPathName Name="LoginCommand" />
     <RootPropertyPathName Name="Password" />
+    <RootPropertyPathName Name="CurrentUser" />
+    <RootPropertyPathName Name="LastBidder" />
+    <RootPropertyPathName Name="SignInCommand" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -24,6 +33,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
+      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Aukce.ViewModels.AllAuctionsViewModel" />
@@ -67,6 +77,16 @@
       <RootProperty Name="Padding" />
       <RootProperty Name="Width" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="Template" />
+      <RootEvent Name="Click" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem">
       <RootProperty Name="Padding" />
       <RootProperty Name="Content" />
@@ -79,7 +99,40 @@
       <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="Aukce.AllAuctions" />
+    <RootType FullName="Aukce.ViewModels.CreateAuctionViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="PlaceholderText" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CalendarDatePicker">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="DateFormat" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Date" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
+      <RootProperty Name="ClockIdentifier" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Time" />
+    </RootType>
+    <RootType FullName="Aukce.CreateAuction" />
     <RootType FullName="Aukce.Details" />
+    <RootType FullName="Aukce.ViewModels.LoginViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="Password" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
     <RootType FullName="Aukce.Login" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
@@ -89,14 +142,6 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Template" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Command" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
       <RootProperty Name="TargetType" />
@@ -108,25 +153,9 @@
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Aukce.MainPage" />
+    <RootType FullName="Aukce.ViewModels.MyAuctionsViewModel" />
     <RootType FullName="Aukce.MyAuctions" />
     <RootType FullName="Aukce.ViewModels.SignViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Text" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
-      <RootProperty Name="Password" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="PlaceholderText" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-    </RootType>
     <RootType FullName="Aukce.Sign" />
   </Roots.RootTypes>
 </Roots>

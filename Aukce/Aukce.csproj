@@ -122,6 +122,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CreateAuction.xaml.cs">
+      <DependentUpon>CreateAuction.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Details.xaml.cs">
       <DependentUpon>Details.xaml</DependentUpon>
     </Compile>
@@ -142,6 +145,9 @@
       <DependentUpon>Sign.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\AllAuctionsViewModel.cs" />
+    <Compile Include="ViewModels\CreateAuctionViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MyAuctionsViewModel.cs" />
     <Compile Include="ViewModels\RelayCommand.cs" />
     <Compile Include="ViewModels\SignViewModel.cs" />
   </ItemGroup>
@@ -166,6 +172,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="AllAuctions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreateAuction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

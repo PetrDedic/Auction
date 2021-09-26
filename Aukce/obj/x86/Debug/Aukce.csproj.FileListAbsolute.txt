@@ -117,3 +117,8 @@ C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\Login.g.i.cs
 C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\Login.g.cs
 C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\Login.xaml
 C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\Login.xbf
+C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\CreateAuction.xbf
+C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\CreateAuction.g.i.cs
+C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\CreateAuction.g.cs
+C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\CreateAuction.xaml
+C:\Users\Sanchez\source\repos\Aukce\Aukce\obj\x86\Debug\CreateAuction.xbf

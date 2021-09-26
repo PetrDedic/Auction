@@ -20,19 +20,23 @@
                 <DataTemplate>
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="3*"/>
-                            <ColumnDefinition Width="0.65*"/>
+                            <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="0.5*"/>
-                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="0.5*"/>
+                            <ColumnDefinition Width="0.5*"/>
+
                         </Grid.ColumnDefinitions>
 
                         <TextBlock Text="{Binding Name}" Grid.Column="0" TextAlignment="Center" TextWrapping="NoWrap"/>
                         <TextBlock Text="{Binding Description}" Grid.Column="1" TextAlignment="Center" TextWrapping="NoWrap" Height="40" Margin="30,0"/>
-                        <TextBlock Text="{Binding Price}" Grid.Column="2" TextAlignment="Center"/>
-                        <TextBlock Text="{Binding Creator.Name}" TextAlignment="Center" Grid.Column="3" TextWrapping="NoWrap"/>
-                        <TextBlock Text="{Binding End}" Grid.Column="5" TextAlignment="Center" />
+                        <TextBlock Text="{Binding Creator.Name}" TextAlignment="Center" Grid.Column="2" TextWrapping="NoWrap"/>
+                        <TextBlock Text="{Binding End}" Grid.Column="3" TextAlignment="Center" />
+                        <TextBlock Text="{Binding Price}" Grid.Column="4" TextAlignment="Center"/>
+                        <Button Grid.Column="5" Content="Bid" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Bid_Click" Opacity="{Binding Id}"/>
+                        <Button Grid.Column="6" Content="Buy" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Buy_Click" Opacity="{Binding Id}"/>
                     </Grid>
 
                 </DataTemplate>

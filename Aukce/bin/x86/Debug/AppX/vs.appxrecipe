@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>C9766BB8202189FB4E9A51490E622BE9B97B45507581D89D375D186DB6CDBC2E</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>4DC6CC24CA40A17089A2FF5F1F35F1A58458A11F42BCA3849A1AC1771D816E02</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>099b62e2-1667-485e-8656-f4fedee499fd_1.0.0.0_x86__53h2ns4yxf1vg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>099b62e2-1667-485e-8656-f4fedee499fd_53h2ns4yxf1vg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>099b62e2-1667-485e-8656-f4fedee499fd</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-09-19T15:11:54.809</Modified>
+      <Modified>2021-09-26T11:54:17.788</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Aukce.exe">
       <PackagePath>entrypoint\Aukce.exe</PackagePath>
-      <Modified>2021-09-19T15:11:54.372</Modified>
+      <Modified>2021-09-26T11:54:17.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\.nuget\packages\microsoft.bcl.asyncinterfaces\1.1.1\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -206,35 +206,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Aukce.xr.xml">
       <PackagePath>Aukce.xr.xml</PackagePath>
-      <Modified>2021-09-19T14:58:01.273</Modified>
+      <Modified>2021-09-26T11:35:06.464</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-09-19T15:05:46.720</Modified>
+      <Modified>2021-09-26T11:54:17.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\AllAuctions.xbf">
       <PackagePath>AllAuctions.xbf</PackagePath>
-      <Modified>2021-09-19T15:05:46.721</Modified>
+      <Modified>2021-09-26T11:54:17.234</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\CreateAuction.xbf">
+      <PackagePath>CreateAuction.xbf</PackagePath>
+      <Modified>2021-09-26T11:54:17.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Details.xbf">
       <PackagePath>Details.xbf</PackagePath>
-      <Modified>2021-09-19T15:05:46.721</Modified>
+      <Modified>2021-09-26T11:54:17.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Login.xbf">
       <PackagePath>Login.xbf</PackagePath>
-      <Modified>2021-09-19T15:05:46.721</Modified>
+      <Modified>2021-09-26T11:54:17.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-09-19T15:05:46.721</Modified>
+      <Modified>2021-09-26T11:54:17.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\MyAuctions.xbf">
       <PackagePath>MyAuctions.xbf</PackagePath>
-      <Modified>2021-09-19T15:05:46.721</Modified>
+      <Modified>2021-09-26T11:54:17.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Sign.xbf">
       <PackagePath>Sign.xbf</PackagePath>
-      <Modified>2021-09-19T15:05:46.721</Modified>
+      <Modified>2021-09-26T11:54:17.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -242,11 +246,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-09-19T14:53:14.259</Modified>
+      <Modified>2021-09-26T10:01:47.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Core\Aukce.exe">
       <PackagePath>Aukce.exe</PackagePath>
-      <Modified>2021-09-19T15:11:54.806</Modified>
+      <Modified>2021-09-26T11:54:17.785</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

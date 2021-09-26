@@ -26,6 +26,8 @@ namespace Aukce
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public string CurrentUser { get; set; }
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -64,6 +66,18 @@ namespace Aukce
                 ApplicationView.PreferredLaunchViewSize = new Size(bounds.Width, bounds.Height);
                 ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             }
+
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+
+
+            if (localSettings.Values["CurrentUser"] != null)
+            {
+                CurrentUser = localSettings.Values["CurrentUser"].ToString();
+                name.Text = CurrentUser;
+            } else
+            {
+                name.Text = "Nepřihlášen";
+            }
         }
 
         private void AllAuctions_Click(object sender, RoutedEventArgs e)
@@ -84,6 +98,24 @@ namespace Aukce
         private void Sign_Click(object sender, RoutedEventArgs e)
         {
             frame.Navigate(typeof(Sign));
+        }
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(typeof(Login));
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if (name.Text == "Nepřihlášen")
+            {
+                frame.Navigate(typeof(Sign));
+            }
+        }
+
+        private void CreateAuctions_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(typeof(CreateAuction));
         }
     }
 }

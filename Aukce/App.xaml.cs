@@ -7,6 +7,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -94,6 +95,8 @@ namespace Aukce
         private void OnSuspending(object sender, SuspendingEventArgs e)
         {
             var deferral = e.SuspendingOperation.GetDeferral();
+            var localSettings = ApplicationData.Current.LocalSettings;
+            localSettings.Values["CurrentUser"] = null;
             //TODO: Uložit stav aplikace a zastavit jakoukoliv aktivitu na pozadí
             deferral.Complete();
         }

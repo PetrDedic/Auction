@@ -12,7 +12,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace Aukce.ViewModels
 {
-    class SignViewModel : INotifyPropertyChanged
+    class LoginViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         private AppDbContext _db = new AppDbContext();
@@ -25,22 +25,20 @@ namespace Aukce.ViewModels
         private string _password;
         public string Password { get { return _password; } set { _password = value; NotifyPropertyChanged(); } }
 
-        public SignViewModel()
+        public LoginViewModel()
         {
-            SignInCommand = new RelayCommand(
+            LoginCommand = new RelayCommand(
                 () =>
                 {
-                    if (Name != null && Password != null && !_db.Users.Any(a => a.Name == Name))
+                    if (Name != null && Password != null && _db.Users.Any(a => a.Name == Name && a.Password == Password))
                     {
-                        User user = new User { Name = Name, Password = Password };
-                        _db.Users.Add(user);
-                        _db.SaveChangesAsync();
+                        User user = _db.Users.Single(a => a.Name == Name && a.Password == Password);
 
                         var localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
                         localSettings.Values["CurrentUser"] = user.Name;
 
 #pragma warning disable CS4014 // Protože se toto volání neočekává, vykonávání aktuální metody pokračuje před dokončením volání.
-                        ShowPopup("Úspěšně registrován");
+                        ShowPopup("Úspěšně přihlášen");
 #pragma warning restore CS4014 // Protože se toto volání neočekává, vykonávání aktuální metody pokračuje před dokončením volání.
 
                         Frame rootFrame = Window.Current.Content as Frame;
@@ -56,7 +54,7 @@ namespace Aukce.ViewModels
                 });
         }
 
-        public RelayCommand SignInCommand { get; set; } 
+        public RelayCommand LoginCommand { get; set; }
 
         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
         {

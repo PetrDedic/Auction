@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    Loaded="Page_Loaded"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
@@ -51,6 +52,21 @@
                             </Button>
                         </StackPanel>
                     </ListViewItem>
+                    <ListViewItem Padding="1">
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="CreateAuctions" Click="CreateAuctions_Click">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Button.Template>
+                                <StackPanel Orientation="Horizontal"  Width="300">
+                                    <SymbolIcon Symbol="Add" Width="64"/>
+                                    <TextBlock Padding="16,16,16,16" Text="Create auction" VerticalAlignment="Center" Width="236"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
                 </ListView>
                 <TextBlock FontSize="24" Margin="16" Text="Account" VerticalAlignment="Center" FontWeight="Bold"/>
                 <ListView>
@@ -79,7 +95,37 @@
                                 </Button.Template>
                                 <StackPanel Orientation="Horizontal"  Width="300">
                                     <SymbolIcon Symbol="Contact" Width="64"/>
-                                    <TextBlock Padding="16,16,16,16" Text="Account" VerticalAlignment="Center" Width="236"/>
+                                    <TextBlock Padding="16,16,16,16" Text="Register" VerticalAlignment="Center" Width="236"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Padding="1">
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="Login" Click="Login_Click">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Button.Template>
+                                <StackPanel Orientation="Horizontal"  Width="300">
+                                    <SymbolIcon Symbol="Contact" Width="64"/>
+                                    <TextBlock Padding="16,16,16,16" Text="Login" VerticalAlignment="Center" Width="236"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Padding="1">
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="User">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <ContentPresenter />
+                                    </ControlTemplate>
+                                </Button.Template>
+                                <StackPanel Orientation="Horizontal"  Width="300">
+                                    <SymbolIcon Symbol="Contact" Width="64"/>
+                                    <TextBlock x:Name="name" Padding="16,16,16,16" Text="{Binding CurrentUser, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Width="236"/>
                                 </StackPanel>
                             </Button>
                         </StackPanel>

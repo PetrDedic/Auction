@@ -163,6 +163,9 @@
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\AllAuctions.xbf">
       <PackagePath>AllAuctions.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\CreateAuction.xbf">
+      <PackagePath>CreateAuction.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sanchez\source\repos\Aukce\Aukce\bin\x86\Debug\Details.xbf">
       <PackagePath>Details.xbf</PackagePath>
     </AppxPackagedFile>
